@@ -1,10 +1,8 @@
-#!/usr/bin/env python3
-
-from dog import Dog
-
+# lib/testing/dog_test.py
 import io
 import sys
 import types
+from dog import Dog
 
 class TestDog:
     '''Dog in dog.py'''
@@ -47,3 +45,4 @@ class TestSit:
         fido.sit()
         sys.stdout = sys.__stdout__
         assert(captured_out.getvalue() == "The dog is sitting.\n")
+
